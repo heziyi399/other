@@ -1,0 +1,30 @@
+rabbitmq:
+  host: localhost
+  port: 5672
+  username: guest
+  password: guest
+
+spring:
+  mail:
+    host: smtp.qq.com
+    username: 1417243391@qq.com
+    password: pbxoxnjapxovhdie
+    properties:
+      from: 1417243391@qq.com
+  thymeleaf:
+    cache: false
+  application:
+    name: hzy-application
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://47.101.210.219:3306/gulimall_pms?useSSL=false&useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC
+    username: hzy
+    password: 123456
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*.xml
+  global-config:
+    db-config:
+      id-type: auto
+
+server:
+  port: 7000
